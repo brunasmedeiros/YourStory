@@ -156,9 +156,9 @@ export default class Graph extends React.Component {
     //MAKE LINE PATH
     const generateLine = () => {
       return d3.line()
-            .x((d) => { return x(d.date) })
-            .y((d) => { return y(d.count) })
-    }
+            .x((d) => { return x(d.date); })
+            .y((d) => { return y(d.count); });
+    };
 
     //APPEND ALL DOMAINS LINE TO GRAPH
     //+++ add css class to distinguish each line +++
