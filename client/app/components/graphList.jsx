@@ -113,12 +113,7 @@ export default class GraphList extends React.Component {
 
     return (
       <div>
-        <div className="graph-row">
-          {graphData.map((domainList, domainListIndex) => 
-            <DomainList domainIndex={domainListIndex} domain={domainList} getValue={this.graphChange.bind(this)} />
-          )}
-          <br />
-        </div>
+
         <div className="data-parent-container">
           <Graph data={this.state.natashaData} />
         </div>
@@ -126,3 +121,9 @@ export default class GraphList extends React.Component {
     );
   }
 }
+        // <div className="graph-row">
+        //   {graphData.map((domainList, domainListIndex) => 
+        //     <DomainList domainIndex={domainListIndex} domain={domainList} getValue={this.graphChange.bind(this)} />
+        //   )}
+        //   <br />
+        // </div>

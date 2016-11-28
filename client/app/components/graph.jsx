@@ -171,10 +171,9 @@ export default class Graph extends React.Component {
     }
 
 
-    const createDomainPath = (domain, color) => {
+    const createDomainPath = (domain, color) => { 
       return generateSVG(lineDataGenerator(domain), color);
-    }
-
+    };
 
     const allData = () => {
       return data[0].domains.map((domain) => {
@@ -202,7 +201,7 @@ export default class Graph extends React.Component {
           <div>date from new week data passed as props: {dayItem.date}</div>
         )}
 
-        <svg width="960" height="200" className="graph-svg"></svg>
+        <svg width="1160" height="200" className="graph-svg"></svg>
       </div>
 
     );
